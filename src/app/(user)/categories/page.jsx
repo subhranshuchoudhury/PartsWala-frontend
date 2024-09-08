@@ -10,7 +10,7 @@ import CategoryCard from "@/components/cards/category";
 import * as api from "@/services";
 
 export const revalidate = 0;
-export const dynamic = "error";
+export const dynamic = "auto";
 
 export default async function Categories() {
   const data = await api.getAllCategoriesByUser();

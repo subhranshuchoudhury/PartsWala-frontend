@@ -8,7 +8,7 @@ import ProductList from "@/components/_main/products";
 // api
 import * as api from "@/services";
 
-export const dynamic = "error";
+export const dynamic = "auto";
 export const revalidate = 10;
 
 export async function generateStaticParams() {

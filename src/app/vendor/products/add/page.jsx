@@ -7,7 +7,7 @@ import AddProduct from "@/components/_admin/products/addProduct";
 // api
 import * as api from "@/services";
 export const revalidate = 0;
-export const dynamic = "error";
+export const dynamic = "auto";
 
 export default async function page() {
   const data1 = await api.getAllCategories();

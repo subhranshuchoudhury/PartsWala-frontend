@@ -12,7 +12,7 @@ import * as api from "@/services";
 import { useQuery } from "react-query";
 
 export const revalidate = 5;
-export const dynamic = "error";
+export const dynamic = "auto";
 
 export default function Categories() {
   const { data, isLoading } = useQuery(["get-home-categories"], () =>

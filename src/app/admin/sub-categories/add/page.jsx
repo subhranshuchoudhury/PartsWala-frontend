@@ -8,7 +8,7 @@ import AddSubCategory from "@/components/_admin/subCategories/addCategory";
 import * as api from "@/services";
 
 export const revalidate = 0;
-export const dynamic = "error";
+export const dynamic = "auto";
 
 export default async function page() {
   const data = await api.getAllCategories();

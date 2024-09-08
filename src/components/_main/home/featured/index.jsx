@@ -14,7 +14,7 @@ import ProductsCarousel from "@/components/carousels/gridSlider";
 import { IoIosArrowForward } from "react-icons/io";
 
 export const revalidate = 5;
-export const dynamic = "error";
+export const dynamic = "auto";
 
 export default function Index() {
   const { data, isLoading } = useQuery(["featured-products"], () =>

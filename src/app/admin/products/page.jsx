@@ -8,7 +8,7 @@ import HeaderBreadcrumbs from "@/components/headerBreadcrumbs";
 import * as api from "@/services";
 
 export const revalidate = 0;
-export const dynamic = "error";
+export const dynamic = "auto";
 
 // Meta information
 export const metadata = {

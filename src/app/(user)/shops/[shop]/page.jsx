@@ -9,7 +9,7 @@ import ProductList from "@/components/_main/products";
 import * as api from "@/services";
 
 export const revalidate = 10;
-export const dynamic = "error";
+export const dynamic = "auto";
 
 export async function generateStaticParams() {
   const { data } = await api.getShopSlugs();
