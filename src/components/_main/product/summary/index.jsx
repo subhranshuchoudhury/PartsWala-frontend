@@ -270,7 +270,6 @@ export default function ProductDetailsSumary({ ...props }) {
                 <Typography noWrap variant="h4" paragraph className="heading">
                   {product?.name}
                 </Typography>
-
                 <Stack spacing={1} mt={1} mb={3}>
                   <Stack
                     direction="row"
@@ -394,6 +393,10 @@ export default function ProductDetailsSumary({ ...props }) {
                 </Stack>
                 <Typography variant="subtitle1">Description:</Typography>
                 <Typography variant="body1"> {product?.description}</Typography>
+                <Typography variant="subtitle1">Disclaimer:</Typography>
+                <Typography variant="body1" color="text.secondary">
+                  Images & price are for reference purpose only.
+                </Typography>
               </Card>
             </Grid>
             <Grid item xs={12} md={5}>

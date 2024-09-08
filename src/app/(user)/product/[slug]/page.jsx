@@ -84,16 +84,17 @@ export default async function ProductDetail({ params: { slug } }) {
             </Grid>
           </Grid>
           <ProductAdditionalInfo />
-          <Suspense fallback={<></>}>
+          {/* INFO: Commented by Developer */}
+          {/* <Suspense fallback={<></>}>
             <ProductDetailTabs
               product={{ description: data.description, _id: data._id }}
               totalRating={totalRating}
               totalReviews={totalReviews}
             />
-          </Suspense>
-          <Suspense fallback={<></>}>
+          </Suspense> */}
+          {/* <Suspense fallback={<></>}>
             <RelatedProductsCarousel id={data._id} category={category?.slug} />
-          </Suspense>
+          </Suspense> */}
         </Stack>
       </Container>
     </Box>
